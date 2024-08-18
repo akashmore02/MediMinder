@@ -43,15 +43,8 @@ function TodoGenerator (){
         <p className=" text-2xl font-bold text-gray-700 mt-6">Add a New Reminder</p>
         <p className=" text-gray-500 font-regular mt-3 text-sm">Set your medicine schedule with ease</p>
           <input className=" outline-none w-[400px] h-8 bg-transparent border-gray-300 border-2 mb-6 pl-2" type="text" placeholder="Medicine Name" required/>
-          <select id="phase" className=" w-[400px] h-8 border-gray-300 border-2 outline-none pl-1 text-gray-600" required>
-                <option value="Select Dosage Type" selected>Select Dosage Type</option>
-                <option value="Before Breakfast">Before Breakfast</option>
-                <option value="After Breakfast">After Breakfast</option>
-                <option value="Before Lunch">Before Lunch</option>
-                <option value="After Lunch">After Lunch</option>
-                <option value="Before Dinner">Before Dinner</option>
-                <option value="After Dinner">After Dinner</option>
-          </select>
+          <label className=" text-sm text-gray-500" htmlFor="phoneno">Enter the time to receive the alert</label>
+          <input id="phase" className=" w-[400px] h-8 border-gray-300 border-2 outline-none pl-1 text-gray-600" type="time"/>
           <label className=" mt-4 text-sm text-gray-500" htmlFor="phoneno">Enter your phone number to receive reminder</label>
           <input className=" outline-none w-[400px] h-8 bg-transparent border-gray-300 border-2 pl-2" name="Phoneno" id="phoneno" type="tel" placeholder="e.g. 70493722822" pattern="[0-9]{10}"/>
           <input className=" w-32 h-8 mt-5 bg-cyan-600 text-white rounded-sm" type="submit" value="Save Reminder" />
